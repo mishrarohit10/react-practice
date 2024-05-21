@@ -1,0 +1,82 @@
+.admin-list {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 400px; /* Adjust width as needed */
+    margin: auto; /* Center the component */
+  }
+  
+  .admin-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between items */
+  }
+  
+  .admin-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for better separation */
+  }
+  
+  .admin-avatar-name {
+    display: flex;
+    align-items: center;
+  }
+  
+  .admin-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure the image covers the area */
+    margin-right: 10px; /* Space between avatar and name */
+  }
+  
+  .admin-details {
+    margin-left: auto; /* Pushes details to the right */
+    position: relative; /* Required for dropdown positioning */
+  }
+  
+  .admin-name {
+    font-weight: bold;
+  }
+  
+  .admin-role-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .admin-role {
+    color: gray;
+    margin-right: 5px; /* Space between role and arrow */
+  }
+  
+  .dropdown-arrow {
+    font-size: 12px;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    border-radius: 4px; /* Rounded corners for dropdown */
+    overflow: hidden; /* Ensure it doesn't overflow */
+    width: max-content; /* Adjust width based on content */
+  }
+  
+  .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  
